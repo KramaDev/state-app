@@ -1,0 +1,51 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem;
+  color: var(--color-white);
+
+  &__text {
+    flex: 1;
+    padding: 0 0.5rem;
+
+    h2 {
+      font-size: 4rem;
+      margin-bottom: 0.25rem;
+      text-decoration: underline;
+      //TABLET
+      @media only screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
+      //MOBILE
+      @media only screen and (max-width: 480px) {
+        font-size: 1rem;
+      }
+    }
+
+    p {
+      font-size: 2rem;
+      //TABLET
+      @media only screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
+      //MOBILE
+      @media only screen and (max-width: 480px) {
+        font-size: 0.5rem;
+      }
+    }
+  }
+
+  &__photo {
+    flex: 1;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--border-round);
+      box-shadow: 1px 1px 1rem var(--color-black);
+      object-fit: cover;
+    }
+  }
+}

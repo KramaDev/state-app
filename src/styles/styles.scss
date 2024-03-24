@@ -1,0 +1,32 @@
+:root {
+  //MONOCHROME
+  --color-white: #fff;
+  --color-black: #222;
+  --color-bg: #636e72;
+
+  //VIBRANT
+  --color-blue: #0984e3;
+  --color-mint: #00b894;
+
+  //BORDERS
+  --border-round: 0.5rem;
+  --border-circle: 1600rem;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+}
+
+//IMPORTS
+//COMPONENTS (A-Z)
+@import "./components/btn.scss";
+@import "./components/card.scss";
+@import "./components/header.scss";
+@import "./components/home.scss";
+@import "./components/navigation.scss";
